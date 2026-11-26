@@ -1,0 +1,24 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "writes_per_trial": 500,
+  "concurrency": 8,
+  "trials": [
+    {
+      "steady_writes_s": 853.27,
+      "failover_s": 1.937,
+      "verified_keys": 582
+    },
+    {
+      "steady_writes_s": 711.89,
+      "failover_s": 1.944,
+      "verified_keys": 582
+    },
+    {
+      "steady_writes_s": 279.96,
+      "failover_s": 2.687,
+      "verified_keys": 582
+    }
+  ],
+  "median_writes_s": 711.89,
+  "median_failover_s": 1.944
+}

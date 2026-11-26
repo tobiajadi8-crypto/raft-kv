@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raft store</title><link rel="stylesheet" href="/style.css"><script defer src="/forms.js"></script></head>
+<body><main>
+<h1>Raft key-value store</h1><form id="raft">
+<label for="key">Key</label><input id="key" value="demo" required maxlength="256" spellcheck="false">
+<label for="value">Value</label><textarea id="value" rows="4" placeholder="Value to save"></textarea>
+<div class="actions"><button value="read">Read value</button><button class="secondary" value="save">Save value</button></div></form>
+<output id="result" aria-live="polite" hidden></output></main></body></html>

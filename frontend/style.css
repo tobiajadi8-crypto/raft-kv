@@ -1,0 +1,18 @@
+*{box-sizing:border-box}
+:root{font:16px/1.5 Inter,"Segoe UI",sans-serif;color:#172f30;background:#f4f6f3}
+body{margin:0}
+main{max-width:600px;margin:clamp(28px,8vh,80px) auto;padding:0 22px 44px}
+h1{font-size:clamp(1.8rem,5vw,2.5rem);letter-spacing:-.045em;line-height:1.1;margin:34px 0 22px}
+form,output{display:block;background:white;border:1px solid #ccd5cf;border-radius:12px;padding:clamp(18px,4vw,28px)}
+label{display:block;font-weight:600;margin-bottom:5px}
+input,textarea{display:block;width:100%;padding:10px 12px;border:1px solid #9aaea2;border-radius:6px;font:inherit;color:inherit;background:#fff;margin-bottom:18px}
+textarea{resize:vertical}
+.actions{display:flex;gap:9px;flex-wrap:wrap}
+button{font:inherit;font-weight:600;border:1px solid #215446;border-radius:6px;background:#215446;color:white;cursor:pointer;padding:9px 16px}
+button.secondary{background:white;color:#215446}
+button:hover{filter:brightness(.92)}
+button:disabled{opacity:.6;cursor:wait}
+:focus-visible{outline:3px solid #348e71;outline-offset:2px}
+output{margin-top:14px;white-space:pre-wrap;overflow-wrap:anywhere;border-left:4px solid #367c61}
+output[data-error="true"]{border-left-color:#b44934}
+[hidden]{display:none}

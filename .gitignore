@@ -1,0 +1,9 @@
+# Local demo state and binaries
+/data/
+/raftkv
+/raftkv.exe
+/benchmark-local.json
+*.log
+__pycache__/
+.env
+.vscode/

@@ -1,0 +1,20 @@
+services:
+  n1:
+    build: .
+    command: ["-id", "n1", "-http", ":8000", "-data", "/data", "-peers", "n1=n1:7000,n2=n2:7000,n3=n3:7000"]
+    ports: ["127.0.0.1:8001:8000"]
+    volumes: ["data1:/data"]
+  n2:
+    build: .
+    command: ["-id", "n2", "-http", ":8000", "-data", "/data", "-peers", "n1=n1:7000,n2=n2:7000,n3=n3:7000"]
+    ports: ["127.0.0.1:8002:8000"]
+    volumes: ["data2:/data"]
+  n3:
+    build: .
+    command: ["-id", "n3", "-http", ":8000", "-data", "/data", "-peers", "n1=n1:7000,n2=n2:7000,n3=n3:7000"]
+    ports: ["127.0.0.1:8003:8000"]
+    volumes: ["data3:/data"]
+volumes:
+  data1: {}
+  data2: {}
+  data3: {}
